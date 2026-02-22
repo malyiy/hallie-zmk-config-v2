@@ -15,7 +15,8 @@
 #define ZMK_BEHAVIORS_KEEP_TO
 #define ZMK_BEHAVIORS_KEEP_TOG
 #define ZMK_BEHAVIORS_KEEP_TRANS
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1600  // default: 600
+#undef ZMK_POINTING_DEFAULT_MOVE_VAL
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1600  // default: 600 (board default: 800)
 
 // #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
@@ -46,7 +47,6 @@
 			#sensor-binding-cells = <0>;
 			tap-ms = <20>;
 			bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-			display-name = "Mouse wheel (UD)";
 		};
 	};
 
